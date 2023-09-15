@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Employee Registration Form</title>
+
+    <link rel="shortcut icon" href="profileImage.png" type="image/x-icon" />            <!--to add image or logo to webpage-->
+
+
+    <style>
+
+      fieldset{
+        background-color: #f5e3b689;
+      }
+
+      h2:hover{
+        color: chartreuse;
+      }
+
+      legend{
+        color: #f61bca;
+        border-style:outset;
+        padding: 5px 5px ;
+        margin-bottom: 10px;
+        background-color: rgba(5, 8, 163, 0.182) ;
+      }
+
+      label{
+        color:rgb(15, 14, 14);
+      }
+
+      input[type="text"]{
+        color: rgb(18, 252, 41);
+       text-transform: capitalize;
+        border-color: rgb(85, 225, 25);
+        
+      }
+    </style>
+  </head>
+  
+  <body>
+    <h2>Employee Registration Form</h2>
+    <!---- 
+
+    <label for="fName">First Name</label> <input type="text" id="fName"> <br>           (-----with this code we are unable to align the elements of registration page, so we use table tag inside body of the code to align the elements )
+    <label for="">Last Name</label><input type="text" > 
+
+  -->
+  <fieldset>                                                                            <!--fieldset along with legend tag is used to create a an outline over the entire form with name "Employee Registration Form" -->
+    <legend>Employee Registration Form</legend>
+
+    <table>
+      <tbody>
+        <form>                                                                                         <!--form tag is used to create a form--- reset and submit buttons will not work if we miss to write form tag-->
+
+        <tr>
+          <td><label for="">First Name</label></td>
+          <td><input type="text" autofocus maxlength="12"  placeholder="Enter your first name"></td>              <!--maxlength attribute allocate the length of alphabates ---placeholder attribute is used to add extra & precise information to the field----- we can use autofocus only on one field in a form because cursor of mouse can be only at one place at a time-->
+        </tr>
+
+        <tr>
+          <td><label for="">Last Name</label></td>
+          <td><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td><label for="">Mobile</label></td>
+          <td><input type="number" required></td>                                       <!--required is added to make the mobile field mandatory-->
+        </tr>
+
+        <tr>
+          <td><label for="">Email</label></td>
+          <td><input type="text"></td>
+        </tr>
+
+        <tr>
+          <td><label for="">Password</label></td>
+          <td><input type="password"></td>
+        </tr>
+
+        <tr>
+          <td><label for="">Select Gender</label></td>
+          <td>
+            <input type="radio"> <label for="">Male</label>
+            <input type="radio"> <label for="">Female</label>
+            <input type="radio"> <label for="">Other</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="">Select your tech stack</label></td>
+          <td>
+            <input type="checkbox"> <label for="">HTML & CSS</label>
+            <input type="checkbox"> <label for="">JavaSCRIPT</label>
+            <input type="checkbox"> <label for="">Bootstrap</label>
+            <input type="checkbox"> <label for="">React</label>
+            <input type="checkbox"> <label for="">Angular</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="">Upload Marksheets</label></td>
+          <td><input type="file" multiple></td>                                   <!--with the use of "multiple" we can add multiple files -->
+        </tr>
+
+        <tr>
+          <td><label for="">Upload Profile Photo</label></td>
+          <td><input type="file"></td>                                             <!--here we can add only 1 file -->
+        </tr>
+
+        <tr>
+          <td><label for="">Date of birth</label></td>
+          <td><input type="date"></td>
+        </tr>
+
+        <tr>
+          <td><label for="">Select State</label></td>
+          <td>
+            <select>
+              <option value="MH">Maharashtra</option>                                <!--option tag is used to add dropdown options in the form page-->
+              <option value="UP">UP</option>
+              <option value="AP">AP</option>
+              <option value="Bihar">Bihar</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="">Country</label></td>
+          <td><input type="text" value="India" readonly disabled></td>               <!--if readonly disabled is not used here and only value attribute is used then at the o/p we get India as country name but we can change it anytime -->
+        </tr>
+
+        <tr> 
+          <td><label for="">Permanent address</label></td>
+          <td><textarea name="" id="" cols="25" rows="10"></textarea></td>           <!--in order to add extra lines to the address element here, we used col and rows attributes-->
+        </tr>
+
+        <tr>
+          
+          <td><button type="reset">Reset</button></td>
+          <td><button type="submit">Submit</button></td>
+          
+        </tr>
+        </form>
+      </tbody>
+    </table>
+  </fieldset>
+  </body>
+</html>
