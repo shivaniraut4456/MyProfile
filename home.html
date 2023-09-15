@@ -19,6 +19,8 @@
             border-style: double;
             border-width: 2px;
             border-color: rgb(121, 7, 98);
+            padding: 2px;
+
         }
 
         #languageName{
@@ -28,7 +30,23 @@
         
         li{
             font-family: 'Poppins', sans-serif;
+            margin-bottom: 20px;
         }
+
+        p{
+            margin-bottom: 40px;
+           
+        }
+        
+        #experience{
+            list-style-type: none;
+        }
+
+        li::before{
+            content:" 👉 ";
+        }
+        
+        
 
 
     </style>
@@ -37,20 +55,20 @@
     <fieldset>
 
     <legend><h3 class="myName">Career Objective</h3></legend>
-    <p>TO WORK IN AN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH</p>
-    <br>
+    <p> TO WORK IN AN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH </p>
+  
     <h3 class="myName">Professional Summary</h3>
     
-    <ul type="square">
-        <li>Having 1 year of experience in developing Single page Web Applications using <span id="languageName">Angular8</span>, HTML5, CSS3, Bootstrap5, JavaScript, TypeScript</li><br>
-        <li style="color: red; background-color: rgb(191, 199, 181) ;" >Experience on working with version control system - GIT and GitHub</li><br>
-        <li style="color: blueviolet; background-color: blanchedalmond;">Experience working with JIRA for user stories and bug tracking</li><br>
-        <li style="color: darkblue; background-color: rgb(204, 204, 204);">Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li><br>
-        <li>Working exposure on ID's like VS Code and Notepad++</li><br>
-        <li>Good working experience under Agile methodologies environment</li><br>
-        <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li><br>
-        <li>Knowledge of NodeJS</li><br>
-        <li>Ability to work with people at all levels in the program </li><br>
+    <ul id="experience">
+        <li>Having 1 year of experience in developing Single page Web Applications using <span id="languageName">Angular8</span>, HTML5, CSS3, Bootstrap5, JavaScript, TypeScript</li>
+        <li style="color: red; background-color: rgb(191, 199, 181) ;" >Experience on working with version control system - GIT and GitHub</li>
+        <li style="color: blueviolet; background-color: blanchedalmond;">Experience working with JIRA for user stories and bug tracking</li>
+        <li style="color: darkblue; background-color: rgb(204, 204, 204);">Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
+        <li>Working exposure on ID's like VS Code and Notepad++</li>
+        <li>Good working experience under Agile methodologies environment</li>
+        <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code</li>
+        <li>Knowledge of NodeJS</li>
+        <li>Ability to work with people at all levels in the program </li>
         <li>Knowledge of Mongodb and expressJS</li>
     </ul>
     </fieldset>
