@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    
+
+    <style>
+        .outerDivision{
+            border: 2px solid whitesmoke;
+            border-radius: 12px;
+            background-color: white;
+            position: relative;
+            width: 400px;
+            height: 650px;
+            top: 20px;
+            left: 500px;
+        }
+
+        
+
+        .innerDivision{
+            margin: 15px 20px;
+            padding: 5px 15px;
+            border-radius: 12px;
+            background-color: rgb(16, 117, 234);
+            color: rgb(191, 227, 179);
+            height: auto;
+            margin-bottom: 10px;
+            font-family: 'Nunito Sans', sans-serif;
+            
+        }
+
+        span{
+            color: red;
+        }
+        
+        hr{
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 1px solid whitesmoke;
+            
+        }
+
+        h2{
+            
+            padding-left: 20px;
+            font-family: 'Nunito Sans', sans-serif;
+            
+        }
+        
+        button{
+            margin: 10px 15px 15px 260px;
+            height: 40px;
+            width: 120px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+            border: 1px solid whitesmoke;
+            font-family: 'Nunito Sans', sans-serif;
+            color: rgb(175, 164, 164);
+            
+        }
+        input[type=text]{
+            border-radius: 12px;
+            border: 1px solid whitesmoke;
+            background-color: whitesmoke;
+            height: 60px;
+            width: 360px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        input[type=email]{
+            border-radius: 12px;
+            border: 1px solid whitesmoke;
+            background-color: whitesmoke;
+            margin-bottom: 15px;
+            height: 35px;
+            width: 360px;
+            font-family: 'Nunito Sans', sans-serif;
+            
+        }
+
+        .para{
+            padding-left: 20px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+
+        ::placeholder{
+            padding-left: 15px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 600;
+            color: rgb(175, 164, 164);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="outerDivision">
+
+        <h2>Subscriber</h2>
+        <hr>
+        <div class="innerDivision">
+            <p >
+                We're sorry to see you go, but hey, no hard feelings, hopefully we will see you back one <br> day.<br> Please fill in your email address in order to unsubscribe from the list. <br> You will receive an email to confirm your unsubscription, just to make sure this is <br> not an accident or somebody else tries to unsubscribe you.
+            </p>
+        </div>
+        <p class="para"><label for=""><b>Email</b><span>*</span></label></p>
+        <p class="para"><input type="email"></p>
+
+        <p class="para"><label for=""><b>Unsubscribe reason</b></label></p>
+        <p class="para"><input type="text" placeholder="Unsubscribe reason"></p>
+
+        <hr>
+
+        <button><b>Unsubscribe</b></button>
+
+    </div>
+
+    
+</body>
+</html>
